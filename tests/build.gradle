@@ -36,6 +36,9 @@ tasks.withType(Test) {
 }
 
 dependencies {
+    implementation "com.typesafe.akka:akka-discovery_${gradle.scala.depVersion}:${gradle.akka.version}"
+    implementation "com.typesafe.akka:akka-http2-support_${gradle.scala.depVersion}:${gradle.akka_http.version}"
+    implementation "com.typesafe.akka:akka-http-xml_${gradle.scala.depVersion}:${gradle.akka_http.version}"
     implementation "junit:junit:4.11"
     implementation "org.scala-lang:scala-library:${gradle.scala.version}"
     implementation "org.scalatest:scalatest_${gradle.scala.depVersion}:3.0.8"
